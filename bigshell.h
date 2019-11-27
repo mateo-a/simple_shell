@@ -52,5 +52,5 @@ void freeptr(char **);
 void wrterrex(char *, int, char *);
 void wrterror(char *, int, char *);
 int _strlen(char *);
-
+void sig_handler(int);
 #endif
