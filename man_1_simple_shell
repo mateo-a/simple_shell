@@ -81,6 +81,7 @@ If the command typed its unknown it will display:
 
 .SH SEE ALSO
 sh(1), bash(2)
+
 .SH BUGS
 No known bugs.
 .SH AUTHORS
