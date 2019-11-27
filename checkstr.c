@@ -1,4 +1,5 @@
 #include "bigshell.h"
+
 /**
  * checkinfo - Check the information enter by the user and look for commands
  * @strn: string with the user input
