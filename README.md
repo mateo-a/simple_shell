@@ -48,7 +48,7 @@ clone
 
 Compilation
 
-> - Once you hace the files of the simple_shell you must comile it with GCC.
+> - Once you have the files of the simple_shell you must compile it with GCC.
 > - gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
 
 Execute
