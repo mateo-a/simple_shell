@@ -135,3 +135,24 @@ char **divtokens(int count_token, char *strn, const char *delim)
 	free(copystr);
 	return (buffer);
 }
+
+/**
+ * numtoken - Counts tokens in the passed string.
+ * @strn: string with the user input
+ * @delim: constant delimeter
+ * Return: number of tokens, -1 if fails
+ */
+int numtoken(char *strn, const char *delim)
+{
+	char *str, *token;
+	int i;
+
+	str = _strdup(strn);
+	if (str == NULL)
+		return (-1);
+	token = strtok(str, delim);
+	for (i = 0; token != NULL; i++)
+		token = strtok(NULL, delim);
+	free(str);
+	return (i);
+}
