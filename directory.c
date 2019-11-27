@@ -1,5 +1,4 @@
 #include "bigshell.h"
-
 /**
  * lookpath - looks for the path of the program
  * @command: command entered (echo, pwd, ls, etc)
