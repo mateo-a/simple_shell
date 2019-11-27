@@ -56,7 +56,7 @@ void new_command(char **array_param, char *strn, int count, char **av)
 		command = lookpath(array_param[0]);
 		if (command == NULL)
 		{
-/*Find file in current directory*/
+
 			check = stat(command_tmp, &buf);
 			if (check == -1)
 			{
@@ -68,7 +68,7 @@ void new_command(char **array_param, char *strn, int count, char **av)
 				free(array_param);
 				exit(100);
 			}
-/*The file is in cwd or has full path*/
+
 			command = command_tmp;
 		}
 		array_param[0] = command;

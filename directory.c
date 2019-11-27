@@ -67,7 +67,7 @@ char **divpath(int index, char *str)
 
 	len = _strlen(str);
 	count_token = 0;
-/*Set the pointer len and add 1 for the = sign*/
+
 	en_var = environ[index] + (len + 1);
 	pathtokens = maintoken(en_var, delim, count_token);
 	if (pathtokens == NULL)
