@@ -1,5 +1,4 @@
 #include "bigshell.h"
-
 /**
  * freestr - free pointers to a string
  * @n: number of pointers to be freed
