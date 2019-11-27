@@ -1,0 +1,88 @@
+.TH SIMPLE_SHELL 3 "27 November 2019" "1.0" "Holberton Simple Shell Manual"
+.SH NAME
+.B  Simple_Shell
+- A simple re-creation of a command language interpreter.
+.SH SYNOPSIS
+.sp
+.B man_1_simple_shell
+[options] [command_string] [file]
+.ad
+
+.SH COMPILE
+
+.B Compile:
+gcc -Wall -Werror -Wextra -pedantic *.c -o hsh
+
+.B Execute:
+.I ./hsh
+
+.SH DESCRIPTION
+
+The
+.B Simple_Shell
+command-line interpreter that communicate with the operating system.
+translates commands typed and convert it, into a computer lenguage,
+interface between a user and the operatin system.
+
+.SH BUILTINS
+
+.B exit:
+The
+.I Exit
+of the program.
+.RS 0
+
+.B env:
+Display the
+.I Enviroment
+variables.
+.RS 0
+
+.SH EXAMPLE
+
+
+.B ls
+- To list directory contents use:
+
+.B BIGSHELL$
+ls [OPTION]... [FILE]...
+
+
+.B pwd
+- To print name of current/working directory:
+
+.B BIGSHELL$
+pwd [OPTION]...
+
+
+.B cat
+- To concatenate files and print on the standard output
+
+.B BIGSHELL$
+cat [OPTION]... [FILE]...
+
+.SH RETURN VALUE
+
+Upon successful return, this function return the specific command typed.
+
+.B BIGSHELL$
+[known command]...
+
+.B BIGSHELL$
+[command requested]...
+
+If the command typed its unknown it will display:
+
+.B BIGSHELL$
+[unknown command]
+
+.B BIGSHELL$
+[attempt number]... : [unknown command]... : not found.
+
+.SH SEE ALSO
+sh(1), bash(2)
+
+.SH BUGS
+No known bugs.
+.SH AUTHORS
+Sergio Quiroga - Alexander Urrego
