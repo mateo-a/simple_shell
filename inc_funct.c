@@ -4,6 +4,7 @@
  * changedir - Change CWD to the parameter in cd, no parameter change HOME
  * @strn: string with the user input
  */
+
 void changedir(char *strn)
 {
 	int index, count_token = 0;
