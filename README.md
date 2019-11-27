@@ -163,8 +163,7 @@ of the operating system.
 
 ### FLOW CHART.
 
-![My First Document](https://user-images.githubusercontent.com/55101797/68889878-cfb44300-06eb-11ea-998e-2b48d0d7bf09.png)
-
+![image](https://user-images.githubusercontent.com/55101797/69752030-5a4e6680-111e-11ea-9ad1-c03901134e84.png)
 ---
 
 ## AUTHORS.
