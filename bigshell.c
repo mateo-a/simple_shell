@@ -23,11 +23,11 @@ void sig_handler(int signo)
  */
 int main(int ac, char *av[], char *env[])
 {
-	(void)(ac);
-	(void)(env);
 	char *strn;
 	size_t size;
 	int count_commands = 0;
+	(void) ac;
+	(void) env;
 
 	if (signal(SIGINT, sig_handler) == SIG_ERR)
 		printf("\ncan't catch SIGINT\n");
