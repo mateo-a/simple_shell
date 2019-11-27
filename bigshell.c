@@ -13,7 +13,6 @@ void sig_handler(int signo)
 		write(STDOUT_FILENO, PROMPT, _strlen(PROMPT));
 	}
 }
-
 /**
  * main - Entry point of the program
  * @ac: Count arguments
