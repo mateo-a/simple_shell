@@ -52,4 +52,5 @@ void freeptr(char **);
 void wrterrex(char *, int, char *);
 void wrterror(char *, int, char *);
 int _strlen(char *);
+
 #endif
