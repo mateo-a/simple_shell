@@ -1,18 +1,5 @@
 #include "bigshell.h"
 
-/**
- * sig_handler - handle the interrupt signal
- * @signo: int
- * Return: void
- */
-void sig_handler(int signo)
-{
-	if (signo == SIGINT)
-	{
-		write(STDOUT_FILENO, "\n", 1);
-		write(STDOUT_FILENO, PROMPT, _strlen(PROMPT));
-	}
-}
 
 /**
  * main - Entry point of the program
