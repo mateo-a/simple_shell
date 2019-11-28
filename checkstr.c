@@ -1,5 +1,4 @@
 #include "bigshell.h"
-
 /**
  * checkinfo - Check the information enter by the user and look for commands
  * @strn: string with the user input
@@ -15,7 +14,7 @@ void checkinfo(char *strn, size_t size, int count_commands, char **av)
 	const char *delim = "\n\t ";
 
 	write(STDOUT_FILENO, PROMPT, _strlen(PROMPT));
-	str_len = getline(&strn, &size, stdin);
+	str_len = getline(&strn, &size, STDIN_FILENO);
 	if (str_len != -1)
 	{
 		array_param = maintoken(strn, delim, count_token);
@@ -133,6 +132,7 @@ char **divtokens(int count_token, char *strn, const char *delim)
 	}
 	buffer[i] = NULL;
 	free(copystr);
+	free(strn);
 	return (buffer);
 }
 
