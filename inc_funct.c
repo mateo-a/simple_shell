@@ -53,7 +53,7 @@ void free_exit(char *strn)
 {
 	free(strn);
 	printfun("\n", 1);
-	exit(0);
+	exit(1);
 }
 
 /**

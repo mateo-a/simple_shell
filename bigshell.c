@@ -20,13 +20,11 @@ void sig_handler(int signo)
  * @env: Array of pointers to environment variables
  * Return: 0
  */
-int main(int ac, char *av[], char *env[])
+int main(__attribute__((unused)) int ac, char **av)
 {
 	char *strn;
 	size_t size;
 	int count_commands = 0;
-	(void) ac;
-	(void) env;
 
 	if (signal(SIGINT, sig_handler) == SIG_ERR)
 		printf("\ncan't catch SIGINT\n");
