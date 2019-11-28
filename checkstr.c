@@ -14,7 +14,7 @@ void checkinfo(char *strn, size_t size, int count_commands, char **av)
 	const char *delim = "\n\t ";
 
 	write(STDOUT_FILENO, PROMPT, _strlen(PROMPT));
-	str_len = getline(&strn, &size, STDIN_FILENO);
+	str_len = getline(&strn, &size, stdin);
 	if (str_len != -1)
 	{
 		array_param = maintoken(strn, delim, count_token);
@@ -132,7 +132,7 @@ char **divtokens(int count_token, char *strn, const char *delim)
 	}
 	buffer[i] = NULL;
 	free(copystr);
-	free(strn);
+/*	free(strn);*/
 	return (buffer);
 }
 
