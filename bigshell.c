@@ -1,18 +1,4 @@
 #include "bigshell.h"
-
-/**
- * sig_handler - handle the interrupt signal
- * @signo: int
- * Return: void
- */
-void sig_handler(int signo)
-{
-	if (signo == SIGINT)
-	{
-		write(STDOUT_FILENO, "\n", 1);
-		write(STDOUT_FILENO, PROMPT, _strlen(PROMPT));
-	}
-}
 /**
  * main - Entry point of the program
  * @ac: Count arguments
@@ -26,8 +12,7 @@ int main(__attribute__((unused)) int ac, char **av)
 	size_t size;
 	int count_commands = 0;
 
-	if (signal(SIGINT, sig_handler) == SIG_ERR)
-		printf("\ncan't catch SIGINT\n");
+	signal(SIGINT, SIG_IGN);
 	do {
 		count_commands++;
 		strn = NULL;
