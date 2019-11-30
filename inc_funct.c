@@ -52,8 +52,7 @@ void varenv(__attribute__((unused))char *strn)
 void free_exit(char *strn)
 {
 	free(strn);
-	printfun("\n", 1);
-	exit(1);
+	exit(0);
 }
 
 /**

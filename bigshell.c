@@ -8,16 +8,18 @@
  */
 int main(__attribute__((unused)) int ac, char **av)
 {
-	char *strn;
-	size_t size;
+	char *strn = NULL;
+	size_t size = 0;
 	int count_commands = 0;
 
-	signal(SIGINT, SIG_IGN);
-	do {
+	while (1) {
+		if (isatty(STDIN_FILENO))
+			write(STDOUT_FILENO, PROMPT, _strlen(PROMPT));
+		signal(SIGINT, SIG_IGN);
 		count_commands++;
-		strn = NULL;
-		size = 0;
+		/*	strn = NULL;
+	       	size = 0;*/
 		checkinfo(strn, size, count_commands, av);
-	} while (1);
+	}
 	return (0);
 }

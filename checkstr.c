@@ -13,7 +13,6 @@ void checkinfo(char *strn, size_t size, int count_commands, char **av)
 	char **array_param;
 	const char *delim = "\n\t ";
 
-	write(STDOUT_FILENO, PROMPT, _strlen(PROMPT));
 	str_len = getline(&strn, &size, stdin);
 	if (str_len != -1)
 	{
@@ -65,7 +64,7 @@ void new_command(char **array_param, char *strn, int count, char **av)
 				for (i = 1; array_param[i]; i++)
 					free(array_param[i]);
 				free(array_param);
-				exit(100);
+				exit(127);
 			}
 
 			command = command_tmp;
@@ -132,7 +131,6 @@ char **divtokens(int count_token, char *strn, const char *delim)
 	}
 	buffer[i] = NULL;
 	free(copystr);
-/*	free(strn);*/
 	return (buffer);
 }
 
