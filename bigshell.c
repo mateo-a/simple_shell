@@ -17,8 +17,6 @@ int main(__attribute__((unused)) int ac, char **av)
 			write(STDOUT_FILENO, PROMPT, _strlen(PROMPT));
 		signal(SIGINT, SIG_IGN);
 		count_commands++;
-		/*	strn = NULL;
-	       	size = 0;*/
 		checkinfo(strn, size, count_commands, av);
 	}
 	return (0);
