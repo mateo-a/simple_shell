@@ -1,5 +1,6 @@
 SIMPLE SHELL
 ===================
+This was a 15 days project that consisted of writing a simple UNIX command interpreter (a basic UNIX shell) in C language, using a limited number of standard library functions, which means that the functions were all rewritten in order to focus on learning and improve the coding skills.
 
 > **INTRODUCTION**
 
@@ -151,7 +152,7 @@ of the operating system.
 >- [**Article**](https://medium.com/@sergioq.7777/what-happens-when-you-type-ls-l-in-the-shell-50bb95d5c5a?source=friends_link&sk=301544e6950294d24a8cd09441e249eb)
 ----------
 
-### MAN-PAGE.
+### MAN-PAGE
 
 
 |  MAN OPTION              |  	  DESCRIPTION                  |
@@ -161,12 +162,32 @@ of the operating system.
 
 ----------
 
-### FLOW CHART.
+### FLOW CHART
 
 ![image](https://user-images.githubusercontent.com/55101797/69752030-5a4e6680-111e-11ea-9ad1-c03901134e84.png)
 ---
+## CHALLENGES FACED AND FUTURE FEATURES
+> This was a really challenging project to develop because of the use of the limited number of standard library functions additionally the huge of topics that had necessary study to can understand the correct way to develop this project.
+>
+> On the other hand, one of the team members had personal problems and had to travel to another country, so we were forced to anticipate the delivery date and the development and testing time was reduced.
+>
+> Nonetheless, the development was completed and it was really enriching, and the knowledge gained was definitely worth it.
+>
+> As possible future, improvements, it could be interesting to improve the implementation of handle the `PATH` and the `exit built-in` in a more effective way and with useful features.
 
-## AUTHORS.
+## AUTHORS
 
 > - **Alexander Urrego** - [mateo-a](https://github.com/mateo-a) - [@mateo_a](https://twitter.com/mateo_a)
 > -  **Sergio Quiroga**   - [sergioq7777](https://github.com/sergioq7777) - [@SergioQ32400329](https://twitter.com/SergioQ32400329) 
+
+---
+## About myself
+I am a Systems Engineer with emphasis in Software :man_technologist:, ITIL Foundation certificate, CompTia Network+ certificate, PMP project management training, SCRUM Foundation certificate, proficient in the use programing languages like `C, C++, Python, REACT, JavaScript, CSS, HTML, SQL`, as well `Flutter, Linux/Unix systems, bash, scripting, GIT, Windows Server, GCP, frameworks like Node.js` and `Flask, NGINX,` **currently going in-depth in Augmented and Virtual Reality (AR/VR)** using `C#` and `UNITY`, huge experience working and supporting infrastructure projects related to datacenters, WLAN, LAN and Networking.
+
+## Where to find me
+<a href="https://www.linkedin.com/in/john-alexander-urrego/">
+  <img src="https://img.shields.io/badge/linkedin-%230077B5.svg?&style=for-the-badge&logo=linkedin&logoColor=white" />
+</a>
+<a href="https://twitter.com/mateo_a">
+  <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" />        
+</a>
